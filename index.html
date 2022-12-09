@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+		.dasht{
+			width: 100%;
+			height: 100vh;
+			background-image: url(images/fon1.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+		.mytank{
+			width: 80px;
+			height: 80px;
+			background-image: url(images/img1.png);
+			position: absolute;
+			background-size: cover;
+			bottom:0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		
+		}
+		.krak{
+			width: 20px;
+			height: 40px;
+			position: absolute;
+			background-position: center;
+			background-size: cover;
+			background-image: url(images/krak1.gif);
+			bottom:80px;
+		}
+		.tank{
+			width: 80px;
+			height: 80px;
+			background-image: url(images/img3.png);
+			background-size: contain;
+			top:0;
+			position: absolute;
+			transform: rotate(180deg);
+		}
+		.btn1{
+			width: 180px;
+			height: 90px;
+			font-size: 4vmin;
+			padding: 5px;
+			background-color: black;
+			color: blue;
+			margin: auto;
+			bottom:0;
+			top:0;
+			left: 0;
+			right: 0;
+			position: absolute;
+			border: 10px solid red;
+			opacity: 0.7;
+		}
+		.p1{
+			font-weight: bold;
+			font-size: 12vmin;
+			left: 0;
+			right: 0;
+			text-align: center;
+			
+		}
+		.btn2{
+			width: 900px;
+			height: 300px;
+			font-weight: bold;
+			font-size: 12vmin;
+			margin:auto;
+			left: 0;
+			right: 0;
+			bottom:0;
+			top:0;
+			text-align: center;
+			position: absolute;
+			color: red;
+			background-color: blue;
+			opacity: 0.8;
+		}
+		.h1{
+			margin-left: 30px;
+			font-size: 10vmin;
+			font-weight: bold;  
+			color: #000;
+
+		}
+		audio{
+			opacity: 0.1;	
+		}
+	</style>
+</head>
+<body>
+	<div class="dasht">
+		<div class="mytank"></div>
+		<button class="btn1">Start game</button>
+		<button class="btn2"> Y O U &nbsp W I N !!!!!!</button>
+		<h1 class="h1"></h1>
+			<audio controls autoplay loop>
+            <source src="images/audio.mp3" type="audio/mpeg">
+            </audio>
+
+	</div>
+	
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</html>
